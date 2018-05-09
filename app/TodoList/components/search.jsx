@@ -11,6 +11,11 @@ class Searcher extends React.Component{
 		this.eventHandler = this.eventHandler.bind(this)
 	}
 
+	/**
+	 * [clickEvent 按钮点击事件]
+	 * @param  {[type]} e [description]
+	 * @return {[type]}   [description]
+	 */
 	clickEvent(e){
 		// this.textInput 使用refs属性获取DOM元素
 		if(this.textInput.value!==''){
@@ -34,6 +39,12 @@ class Searcher extends React.Component{
 		}
 	}
 
+	/**
+	 * [eventHandler 事件处理-回车事件、submit点击事件  
+	 * 使用事件委托，此处不再使用clickEvent,keyEvterEvent]
+	 * @param  {[type]} e [description]
+	 * @return {[type]}   [description]
+	 */
 	eventHandler(e){
 		// 点击"添加" 对应的事件处理
 		if(e.type === 'click' && e.target.type === 'submit'){

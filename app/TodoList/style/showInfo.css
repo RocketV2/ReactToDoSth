@@ -1,0 +1,43 @@
+
+
+.info-wrap ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.info-wrap ul li{
+	width: 14rem;
+	height: 2rem;
+	line-height: 2rem;
+	background-color: #fff;
+	opacity: 0.5;
+	text-align: center;
+	margin-top: 2rem;
+	border-radius: 0.2rem;
+}
+.info-wrap ul li div{
+	display: inline-block;
+}
+.del-text{
+	width: 11.5rem;
+	height: 2rem;
+	margin-left: 0.5rem;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+.del-icon{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0.25rem 0.25rem;
+	float: right;
+	background: url(../icons/del.png);
+	background-size: 100% 100%;
+}
+.del-icon:hover{
+	background: url(../icons/del-active.png);
+	background-size: 100% 100%;
+}
+
+
+
