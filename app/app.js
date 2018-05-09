@@ -2,6 +2,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+// 引入样式
+import './style/global'
+import './style/search'
+import './style/showInfo'
+
+// 引入组件
 import {Searcher} from './components/search'
 import {ShowInfo} from './components/showInfo'
 
@@ -33,7 +39,7 @@ class App extends React.Component{
 
 	render(){
 		return(
-			<div>
+			<div className="toDoList">
 				<Searcher addInfo={this.addInfoEvent} />
 				<ShowInfo infoArr={this.state.infoArr}/>
 			</div>

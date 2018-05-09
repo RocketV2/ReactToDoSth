@@ -57,9 +57,9 @@ class Searcher extends React.Component{
 		const tips = "请输入添加信息";
 
 		return (
-			<div onKeyPress={this.eventHandler} onKeyDown={this.eventHandler} onClick={this.eventHandler}>
-				<input type="text" ref={(input) => this.textInput = input} placeholder={tips} />
-				<button type="submit">add info</button>
+			<div className="searcher" onKeyPress={this.eventHandler} onKeyDown={this.eventHandler} onClick={this.eventHandler}>
+				<input className="sea-input" type="text" ref={(input) => this.textInput = input} placeholder={tips} />
+				<a className="sea-btn" type="submit" target="_blank">add info</a>
 			</div>
 		)
 	}

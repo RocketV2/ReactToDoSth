@@ -1,0 +1,21 @@
+
+
+
+.sea-input{
+	outline: none;
+	width: 13rem;
+	height: 2rem;
+	border-radius: 0.3rem;
+	border: none;
+	padding: 0 0.5rem;
+	margin-right: 1rem;
+}
+
+.sea-btn{
+	padding: 0.5rem 1rem;
+	background-color: #7ddbff;
+	border-radius: 0.3rem;
+}
+a.sea-btn:active{
+	background-color: #3eb2fb;
+}

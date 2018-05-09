@@ -16,8 +16,10 @@ class ShowInfo extends React.Component{
 			)
 		} );
 		return(
-			<div>
-				{infoArr}
+			<div className="info-wrap">
+				<ul>
+					{infoArr}
+				</ul>
 			</div>
 		)
 	}
