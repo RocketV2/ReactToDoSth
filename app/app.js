@@ -2,9 +2,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+// 引入样式
+import './style/global'
 
-import {Todolist as TodoList} from './TodoList'
-
+import {Todolist as TodoList} from './components/TodoList/index'
+import {SlideShow} from './components/SlideShow/index'
 
 class App extends React.Component{
 	constructor(props){
@@ -15,7 +17,7 @@ class App extends React.Component{
 	render(){
 		return(
 			<div>
-				<TodoList />
+				<SlideShow />
 			</div>
 		)
 	}
