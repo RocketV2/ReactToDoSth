@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 const ROOT_PATH = path.resolve(__dirname); // 项目跟路径
 const APP_PATH = path.resolve(ROOT_PATH, 'app'); // 项目开发目录src
-const APP_FILE = path.resolve(APP_PATH, 'app.js'); // 项目入口的index.js
+const APP_FILE = path.resolve(APP_PATH, 'index.js'); // 项目入口的index.js
 const DIST_PATH = path.resolve(ROOT_PATH, 'build'); // 项目打包输出路径
 
 module.exports = {
@@ -22,6 +22,10 @@ module.exports = {
 		extensions:['.js','.json','.jsx','.css']
 	},
 
+	devServer:{
+		contentBase: '/build',
+		hot: false
+	},
 
 	module:{
 		rules:[
@@ -33,6 +37,10 @@ module.exports = {
 				test:/(\.css)$/,
 				use:["style-loader","css-loader"],
 				exclude:/node_modules/
+			},{
+				test:/(\.png|\.jpg|\.gif)$/,
+				use:["file-loader"],
+				exclude:/node_modules/
 			}
 		]
 	},
@@ -40,7 +48,7 @@ module.exports = {
 	plugins:[
             
 		new HtmlWebpackPlugin({
-			template: __dirname + "/app/app.html"// 入口文件HTML
+			template: __dirname + "/app/index.html"// 入口文件HTML
 		}),
 
 

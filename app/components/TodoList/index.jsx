@@ -11,7 +11,7 @@ import './style/showInfo'
 import {Searcher} from './components/search'
 import {ShowInfo} from './components/showInfo'
 
-class Todolist extends React.Component{
+class TodoList extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
@@ -61,7 +61,7 @@ class Todolist extends React.Component{
 	}
 }
 
-export {Todolist}
+export {TodoList}
 
 
 
