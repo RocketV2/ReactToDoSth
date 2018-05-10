@@ -15,6 +15,7 @@
 	top: 0;
 	bottom: 0;
 	left: 0;
+	z-index: 999;
 }
 .sidebar-info-wrap{
 	margin: 2rem;
@@ -70,10 +71,18 @@
 
 /*内容展示相关*/
 .app-content{
-	position: relative;
-	margin-left: 20rem;
-	padding-top: 3rem;
 	height: 100%;
-	top: 0;
+	padding-left: 20rem;
+	padding-top: 3rem;
+	overflow: scroll;
 	background-color: #6dd677;
+	min-width: 960px;
 }
+
+
+
+
+
+
+
+

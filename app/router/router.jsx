@@ -1,6 +1,6 @@
 
 import React from 'react'
-import {BrowserRouter as Router, Route , Link} from "react-router-dom"
+import {BrowserRouter as Router, Route , Link , Switch} from "react-router-dom"
 
 // 引入组件
 import {App} from '../app'
@@ -16,7 +16,7 @@ export const RouterBase = () => (
 	      	<NavRouter />
 
 	      	<div className="app-content">
-
+	      		<Route path="/" component={App} />
 	      		<Route path="/slide" component={SlideShow} />
 				<Route path="/list" component={TodoList} />
 	      	</div>

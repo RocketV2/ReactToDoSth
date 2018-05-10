@@ -30,11 +30,11 @@ class NavRouter extends React.Component{
 			},
 			{
 				url:'/list',
-				title:'list'
+				title:'to-do-list'
 			},
 			{
 				url:'/slide',
-				title:'slide'
+				title:'轮播图'
 			},
 		];
 		const sideItems = sidebarArr.map( (item,index) => {
