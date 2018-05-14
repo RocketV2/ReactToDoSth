@@ -1,11 +1,12 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import PropTypes from 'prop-types'
 
 class Searcher extends React.Component{
 
-	constructor(props){
-		super(props)
+	constructor(){
+		super(...arguments)
 		this.clickEvent = this.clickEvent.bind(this)
 		this.keyEnterEvent = this.keyEnterEvent.bind(this)
 		this.eventHandler = this.eventHandler.bind(this)
@@ -75,5 +76,10 @@ class Searcher extends React.Component{
 		)
 	}
 }
+
+Searcher.propTypes = {
+	addInfo: PropTypes.func.isRequired,
+}
+
 
 export {Searcher}

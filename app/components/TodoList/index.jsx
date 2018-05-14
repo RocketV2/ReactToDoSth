@@ -12,8 +12,8 @@ import {Searcher} from './components/search'
 import {ShowInfo} from './components/showInfo'
 
 class TodoList extends React.Component{
-	constructor(props){
-		super(props);
+	constructor(){
+		super(...arguments);
 		this.state = {
 			infoArr:[]
 		}

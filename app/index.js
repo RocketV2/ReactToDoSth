@@ -11,11 +11,12 @@ import './style/router'
 // 引入路由
 import {RouterBase as RouterSystem} from './router/router'
 
+// ReactDOM.render(<RouterSystem />,document.getElementById('app'))
 
-const render = () => ReactDOM.render(ReactDOM.render(
+const render = () => ReactDOM.render(
 	<RouterSystem 
 	/>,
-	document.getElementById('app'))
+	document.getElementById('app')
 );
 
 render();
