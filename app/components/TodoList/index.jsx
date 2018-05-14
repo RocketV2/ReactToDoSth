@@ -21,6 +21,10 @@ class TodoList extends React.Component{
 		this.subInfoItems = this.subInfoItems.bind(this)
 	}
 
+	shouldComponentUpdate(nextState,nextProps){
+		return (nextState.infoArr !== this.state.infoArr)
+	}
+
 	/**
 	 * [addInfoEvent 添加数组内容]
 	 * @param {[type]} info [description]

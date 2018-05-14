@@ -1,6 +1,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import PropTypes from 'prop-types'
 
 class ShowInfo extends React.Component{
 
@@ -33,6 +34,11 @@ class ShowInfo extends React.Component{
 			</div>
 		)
 	}
+}
+
+ShowInfo.propTypes ={
+	subInfoItems: PropTypes.func.isRequired, // 删除函数
+	infoArr: PropTypes.array.isRequired, // 传入的数组
 }
 
 export {ShowInfo}
