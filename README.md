@@ -6,9 +6,7 @@
 > 目前做了todolist，轮播图等，后续会做些常见的组件
 
 #### 技术栈
-> react 16 + react-router 4 + redux
-> ES6
-> webpack
+> react 16 + react-router 4 + redux + ES6 + webpack
 
 #### 运行项目
 > `git clone` 项目
