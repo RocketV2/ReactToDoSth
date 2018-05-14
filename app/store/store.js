@@ -4,6 +4,11 @@ import reducer from '../reducer/reducer'
 
 // 初始化默认值
 const defaultStore = {
+	// 组件 todolist
+	todoList: {
+		infoArr:[]
+	},
+
 
 };
 
